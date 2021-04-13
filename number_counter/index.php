@@ -87,7 +87,7 @@
                 default:
                     break;}
 
-                    echo "Random number is: $remainer toista";
+                    echo "Random number is: $remainer" . "toista";
 
                 } else if (20 <= $random && $random  <= 99) {
                     $module = floor($random/10);
@@ -155,9 +155,18 @@
                                 default:
                                     break;}
                             
-                            echo "Random number is: $remainer kymmentä $result";
+                            echo "Random number is: $remainer" . "kymmentä" . "$result";
                         }else {
                             echo 'sata';
                         }
     ?>    
+
+<?php
+$playedRounds = 0;
+$jackpotStatus = false;
+$roundCost = 0.5;
+
+?>
+
+
 </body>
